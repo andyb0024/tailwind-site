@@ -1,0 +1,52 @@
+<!-- nav bar  -->
+<nav class="bg-white">
+  <div class="px-3 max-w-7xl mx-auto max-auto text-green">
+    <div class="flex justify-between">
+      <!-- logo -->
+      <div class="text-2xl font-bold">
+        <a href="" class="flex py-4 px-2">
+          <fa-icon [icon]="faBarcode" class="h-6 w-6 mr-1"></fa-icon>
+          <span>CodeBar</span>
+        </a>
+      </div>
+      <div class="flex space-x-4">
+        <!-- primary nav -->
+        <div class="hidden md:flex flex items-center space-x-3 font-semibold">
+          <a href="" class="py-5 px-3">Features</a>
+          <a href="" class="py-5 px-3">Pricing</a>
+          <a href="" class="py-5 px-3">Features</a>
+          <a href="" class="py-5 px-3">Pricing</a>
+        </div>
+      </div>
+
+      <!-- secondary nav -->
+      <div class="hidden md:flex flex items-center space-x-3 font-semibold">
+        <a
+          href=""
+          class="py-2 px-3 bg-green text-white rounded-full shadow"
+        >
+          Documentation
+          <!-- <fa-icon [icon]="faCircleChevronRight" class="h-6 w-6 mr-1"></fa-icon> -->
+        </a>
+      </div>
+
+      <!-- mobile button  -->
+      <div class="md:hidden flex items-center">
+        <button (click)="Open()">
+          <fa-icon
+          [icon]="faBars"
+          class="mr-1 font-bold text-2xl py-4 px-2"
+        ></fa-icon>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+    <!-- modile menu -->
+    <div [class]="isVisible? 'r':'hidden'">
+      <a href="" class="block  py-2 px-4 text-sm hover:bg-gray-200" >Menu</a>
+      <a href="" class="block py-2 px-4 text-sm hover:bg-gray-200">Service</a>
+    </div>
+</nav>
+<!-- content -->
